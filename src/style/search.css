@@ -1,0 +1,27 @@
+/* search style */
+.bi-search,
+.searchButton {
+  position: absolute;
+}
+.bi-search {
+  left: 1rem;
+  top: 30%;
+}
+.searchButton {
+  right: 1rem;
+  top: 20%;
+}
+.searchDiv {
+  position: absolute;
+  top: -20px;
+  left: 12.5%;
+}
+.searchInput {
+  width: 100%;
+  text-indent: 2.5rem;
+  height: 60px;
+  border: none;
+}
+.searchInput::placeholder {
+  text-indent: 2.5rem;
+}

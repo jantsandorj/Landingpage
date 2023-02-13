@@ -1,0 +1,25 @@
+.navBorder {
+  border-bottom: rgba(128, 128, 128, 0.31) 2px solid;
+  padding: 0 0 !important;
+  margin: 0;
+}
+.navLink:hover,
+.navLink:visited {
+  border-bottom: 2px green solid;
+}
+.font {
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.grayParagraph {
+  color: #afadb5;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.outerDiv {
+  padding: 100px 0px;
+}
