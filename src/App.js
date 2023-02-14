@@ -19,7 +19,6 @@ function App() {
       <main>
         <Search />
         <Benefit />
-        <
       </main>
     </div>
   );
