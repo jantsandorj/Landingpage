@@ -2,6 +2,7 @@ import MenuNavbar from "./components/navbar";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Search from "./components/search";
+import Benefit from "./components/benefit";
 
 function App() {
   const [menudata, setMenudata] = useState([]);
@@ -17,6 +18,8 @@ function App() {
       </header>
       <main>
         <Search />
+        <Benefit />
+        <
       </main>
     </div>
   );

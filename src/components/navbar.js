@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Image/phonex1.png";
 import "../style/navbar.css";
+import "../style/global.css";
 function MenuNavbar({ menudata }) {
   return (
     <Navbar
