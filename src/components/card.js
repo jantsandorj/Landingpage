@@ -1,11 +1,20 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function Cards({ iconName, title, paragraph, cardImg, isDiv }) {
+function Cards({
+  iconName,
+  title,
+  paragraph,
+  cardImg,
+  isDiv,
+  price,
+  category,
+}) {
   return (
-    <Card style={{ backgroundColor: "white", border: "none" }}>
+    <Card
+      style={{ backgroundColor: "white", border: "none", margin: " 0 1rem" }}
+    >
+      <Card.Img variant="top" src={cardImg} />
       <Card.Body>
-        <Card.Img variant="top" src={cardImg} />
         <div
           style={{
             display: isDiv ? "flex" : "none",
@@ -15,15 +24,17 @@ function Cards({ iconName, title, paragraph, cardImg, isDiv }) {
             borderRadius: "50%",
             marginBottom: "1.2rem",
           }}
-          className="justify-content-center align-items-center"
+          className="justify-content-center align-items-center middle"
         >
           <i
             className={`cardIcon bi bi-${iconName}`}
             style={{ fontSize: "30px" }}
           ></i>
         </div>
+        <Card.Text className="grayParagraph">{category}</Card.Text>
         <Card.Title>{title}</Card.Title>
         <Card.Text className="grayParagraph">{paragraph}</Card.Text>
+        <Card.Text className="price">{price}</Card.Text>
       </Card.Body>
     </Card>
   );

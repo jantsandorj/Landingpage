@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Search from "./components/search";
 import Benefit from "./components/benefit";
+import Product from "./components/product";
+import Ourproduct from "./components/Ourproduct";
+import Testimol from "./components/testimonals";
 
 function App() {
   const [menudata, setMenudata] = useState([]);
@@ -19,6 +22,9 @@ function App() {
       <main>
         <Search />
         <Benefit />
+        <Product />
+        <Ourproduct />
+        <Testimol />
       </main>
     </div>
   );

@@ -1,0 +1,39 @@
+.product .card .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #151411;
+}
+.product .card {
+  width: 100%;
+  position: relative;
+}
+.product .card img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.product .card .card-body {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #151411;
+}
+.card:hover img {
+  opacity: 0.3;
+}
+
+.product .card:hover .card-body {
+  opacity: 1;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
